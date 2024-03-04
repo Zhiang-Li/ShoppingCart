@@ -14,15 +14,16 @@ export default function ShoppingCart({ productsToBuy, onDeleteProduct, onClear }
   };
 
   const renderProductToBuy = (product,i ) =>(
-    <li key={i} id = {i} ref={idRef}>
+    <li className="list-group-item d-flex justify-content-between align-items-center" key={i} id = {i} ref={idRef}>
       {product.name} 
       <br></br>
-      ${product.price} 
+      price: ${product.price} 
       <br></br>
       <button className="btn btn-sm btn-outline-danger" onClick={()=>onDeleteHelper(product.id)}> 
       - 
       </button>
       amount:{product.quantity}
+
 
 
     </li>
@@ -39,7 +40,7 @@ export default function ShoppingCart({ productsToBuy, onDeleteProduct, onClear }
       Clear Cart
       </button>
 
-      <ul>{productsToBuy.map(renderProductToBuy)}</ul>
+      <ul className="list-group">{productsToBuy.map(renderProductToBuy)}</ul>
 
     </div>
   );

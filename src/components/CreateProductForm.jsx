@@ -24,13 +24,13 @@ export default function CreateProductForm({onAddProduct}) {
       <form>
         <div className = "mb-3">
           <label htmlFor="name" className="form-label">
-                Name
+                Product Name
           </label>
           <input type="text" className="form-control" id="name" ref={nameRef}/>
         </div>
         <div className = "mb-3">
           <label htmlFor="price" className="form-label">
-                Price
+                Price in $
           </label>
           <input type="number" className="form-control" id="price" ref={priceRef}/>
         </div>
