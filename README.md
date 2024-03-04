@@ -25,13 +25,15 @@ https://shoppingcart-c4b35.web.app/
 
 ## Video Demo
 
-For detailed information on how to use the app, please visit: 
+For detailed information on how to use the app, please visit: https://youtu.be/fdj1BrGZej4
 
 ## Methods used To Build the Project
 
 There are three main components on the website: 
 
-1. Create Product Form, 2. Product List, 3. Shopping Cart List
+1. Create Product Form 
+2. Product List
+3. Shopping Cart List
 
 In Create Product Form, there is an add product method which takes the input in the form field and insert the new product to the "Products" collection in my firebase. Name and price should be entered by users. Id of the new product will be the next largest id in current product. A blank image is used for convenience.
 
