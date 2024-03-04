@@ -15,25 +15,32 @@ export default function ShoppingCart({ productsToBuy, onDeleteProduct, onClear }
 
   const renderProductToBuy = (product,i ) =>(
     <li key={i} id = {i} ref={idRef}>
-      {product.id} {product.name} ${product.price} amount:{product.quantity}
+      {product.name} 
+      <br></br>
+      ${product.price} 
+      <br></br>
       <button className="btn btn-sm btn-outline-danger" onClick={()=>onDeleteHelper(product.id)}> 
       - 
       </button>
+      amount:{product.quantity}
+
 
     </li>
   );
   return (
     <div>
-      <ul>{productsToBuy.map(renderProductToBuy)}</ul>
       Total : {" "}
       {productsToBuy.reduce(
         (prevTotalPrice, product) => prevTotalPrice+product.price*product.quantity,
         0
-      )}
+      )} $
       <br></br>
       <button className="btn btn-sm btn-outline-danger" onClick={onClearHelper}> 
       Clear Cart
       </button>
+
+      <ul>{productsToBuy.map(renderProductToBuy)}</ul>
+
     </div>
   );
 }

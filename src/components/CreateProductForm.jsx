@@ -20,7 +20,7 @@ export default function CreateProductForm({onAddProduct}) {
 
   return (
     <div>
-      <h2>CreateProductForm</h2>
+      <h2>Create a New Product Here</h2>
       <form>
         <div className = "mb-3">
           <label htmlFor="name" className="form-label">
